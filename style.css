@@ -2,37 +2,53 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10em;
+    height: 100vh;
     font-family: 'Kanit', sans-serif;
 }
-
 
 #tela-login {
+    display: flex;
+    flex-flow: column wrap;
     border: 2px solid black;
     border-radius: 10px;
-    padding: 1.5em;
+    padding: 1em;
 }
 
-.labels {
+#lbl-usuario, #lbl-senha{
     font-size: 20px;
-    cursor: auto;
+    padding: 5px;
+
 }
 
-.inputs {
-    margin: 0.5em;
+#inp-usuario, #inp-senha {
     border-radius: 5px;
-}
-
-#inp-usuario,
-#inp-senha {
-    box-shadow: 3px 3px 5px grey;
     font-family: 'Kanit', sans-serif;
     font-size: 1em;
 }
 
-#inp-esq-senha {}
+#inp-usuario:focus, #inp-senha:focus{
+    transition-duration: 0.3s;
+    background-color: rgba(128, 128, 128, 0.2);
+    box-shadow: 5px 5px 5px grey;
+}
 
-#btn-entrar {
+#esq-senha {
+    cursor: pointer;
+    color: darkblue;
+    width: fit-content;
+}
+
+#esq-senha:active {
+    color: rgba(0, 0, 255, 0.7);
+}
+
+#btn-entrar, #btn-cadastro{
     font-family: 'Kanit', sans-serif;
-    font-size: 1em;
+    font-size: 15px;
+    font-weight: 600;
+    width: 10em;
+    border-radius: 10px;
+    margin: 10px auto;
+    cursor: pointer;
+    background: linear-gradient(to bottom, white,grey);
 }
