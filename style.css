@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10em;
+    font-family: 'Kanit', sans-serif;
+}
+
+
+#tela-login {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 1.5em;
+}
+
+.labels {
+    font-size: 20px;
+    cursor: auto;
+}
+
+.inputs {
+    margin: 0.5em;
+    border-radius: 5px;
+}
+
+#inp-usuario,
+#inp-senha {
+    box-shadow: 3px 3px 5px grey;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1em;
+}
+
+#inp-esq-senha {}
+
+#btn-entrar {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1em;
+}
