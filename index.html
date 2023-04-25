@@ -6,14 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="/style.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
     <title>Tela de Login</title>
 </head>
 <body>
-    <div id="tela-principal">
+    <div id="tela-login">
         <label class="labels" id="lbl-usuario" for="inp-usuario">Usuário: </label>
         <input class="inputs" id="inp-usuario" type="text">
+        <br>
         <label class="labels" id="lbl-senha" for="inp-senha">Senha: </label>
         <input class="inputs" id="inp-senha" type="password">
+        <br>
+        <input class="inputs" id="inp-esq-senha" type="checkbox">
+        <label class="labels" id="lbl-esq-senha" for="rd-esq-senha">Esqueceu a senha? </label>
+        <br><br>
+        <button id="btn-entrar">Entrar</button>
     </div>
     
 </body>
