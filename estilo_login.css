@@ -1,5 +1,5 @@
 body {
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -51,7 +51,7 @@ hr{
 #inp-usuario:focus, #inp-senha:focus{
     transition-duration: 0.3s;
     background-color: white;
-    box-shadow: 5px 5px 5px grey;
+    box-shadow: 5px 5px 5px gray;
     font-weight: 300;
 }
 
