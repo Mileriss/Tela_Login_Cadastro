@@ -1,9 +1,29 @@
 body {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     height: 100vh;
     font-family: 'Kanit', sans-serif;
+    background-image: url(./Imagens/montanha.svg);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+hr{
+    height: 100%;
+    width: 100%;
+    color: black;
+}
+
+#titulo-login{
+    animation: flutuando 2s ease-in-out infinite alternate;
+}
+@keyframes flutuando {
+    to{
+        transform: translateY(5px);
+    }
+    
 }
 
 #tela-login {
@@ -12,24 +32,27 @@ body {
     border: 2px solid black;
     border-radius: 10px;
     padding: 1em;
+    background: linear-gradient(to right bottom, lightblue, rgba(255, 182, 193, 0.8), rgba(128, 0, 128, 0.6));
 }
 
 #lbl-usuario, #lbl-senha{
-    font-size: 20px;
+    font-size: 25px;
     padding: 5px;
-
 }
 
 #inp-usuario, #inp-senha {
     border-radius: 5px;
     font-family: 'Kanit', sans-serif;
     font-size: 1em;
+    font-weight: bold;
+    background-color: rgba(128, 128, 128, 0.5);
 }
 
 #inp-usuario:focus, #inp-senha:focus{
     transition-duration: 0.3s;
-    background-color: rgba(128, 128, 128, 0.2);
+    background-color: white;
     box-shadow: 5px 5px 5px grey;
+    font-weight: 300;
 }
 
 #esq-senha {
@@ -47,7 +70,7 @@ body {
     font-size: 15px;
     font-weight: 600;
     width: 10em;
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 10px auto;
     cursor: pointer;
     background: linear-gradient(to bottom, white,grey);
