@@ -6,63 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="./estilo_cadastro.css" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet" />
     <title>Cadastre-se</title>
   </head>
   <body>
-    <div id="form-cadastro">
+    <div id="tela-cadastro">
       <h1 id="titulo-cadastro">Cadastre-se</h1>
-      <form>
+      <form id="form-cadastro">
         <fieldset id="info-pessoal">
+          <!--INFO PESSOAL-->
           <legend>Informação pessoal</legend>
-          <label id="lbl-nome" for="inp-nome">Nome: </label>
-          <input id="inp-nome" type="text" placeholder="Digite seu nome..."/>
+          <label class="lbl" id="lbl-nome" for="inp-nome">Nome: </label><br>
+          <input class="inp" id="inp-nome" type="text" placeholder="Digite seu nome..." />
           <br />
-          <label id="lbl-sobrenome">Sobrenome: </label>
-          <input id="inp-sobrenome" type="text" placeholder="Digite seu sobrenome..."/>
+          <label class="lbl" id="lbl-sobrenome">Sobrenome: </label><br>
+          <input class="inp" id="inp-sobrenome" type="text" placeholder="Digite seu sobrenome..." />
           <br />
-          <label id="lbl-idade">Data de nascimento: </label>
-          <input id="inp-nascimento" type="date"/>
+          <label class="lbl" id="lbl-nascimento">Data de nascimento: </label>
+          <input class="inp" id="inp-nascimento" type="date" />
           <br />
-          <label id="lbl-genero">Gênero: </label>
-          <input id="inp-masc" type="radio" value="Masculino" name="genero" />
-          <label id="lbl-masc">Masculino</label>
-          <input id="inp-fem" type="radio" value="Feminino" name="genero" />
-          <label id="lbl-fem">Feminino</label>
-          <input id="inp-outro" type="radio" value="Outro" name="genero" />
-          <label id="lbl-outro">Outro</label>
+          <label class="lbl" id="lbl-genero">Gênero: </label>
+          <input class="inp-radio" id="inp-masc" type="radio" value="Masculino" name="genero" />
+          <label class="lbl" id="lbl-masc">Masculino</label>
+          <input class="inp-radio" id="inp-fem" type="radio" value="Feminino" name="genero" />
+          <label class="lbl" id="lbl-fem">Feminino</label>
+          <input class="inp-radio" id="inp-outro" type="radio" value="Outro" name="genero" />
+          <label class="lbl" id="lbl-outro">Outro</label>
         </fieldset>
+        <!--INFO ENDEREÇO-->
         <fieldset id="info-endereco">
           <legend>Endereço</legend>
-          <label id="lbl-rua" for="inp-rua">Rua / Avenida: </label>
-          <input id="inp-rua" type="text" placeholder="Digite o seu endereço...">
-          <br>
-          <label id="lbl-bairro" for="inp-bairro">Bairro: </label>
-          <input id="inp-bairro" type="text" placeholder="Digite seu bairro...">
-          <br>
-          <label id="lbl-numero" for="inp-numero">Nº da residencia: </label>
-          <input id="inp-numero" type="number" placeholder="Digite o Nº da residencia...">
-          <br>
-          <label id="lbl-compl" for="inp-compl">Complemento (Opcional): </label>
-          <input id="inp-compl" type="text" placeholder="Apto nº | loja x | andar nº...">
-          <br>
-          <label id="lbl-cep" for="inp-cep">CEP: </label>
-          <input id="inp-cep" type="cep" pattern="12345-67" placeholder="xxxxx-xx">
+          <label class="lbl" id="lbl-rua" for="inp-rua">Rua / Avenida: </label><br>
+          <input class="inp" id="inp-rua" type="text" placeholder="Digite o seu endereço..." />
+          <br />
+          <label class="lbl" id="lbl-bairro" for="inp-bairro">Bairro: </label><br>
+          <input class="inp" id="inp-bairro" type="text" placeholder="Digite seu bairro..." />
+          <br />
+          <label class="lbl" id="lbl-numero" for="inp-numero">Nº da residencia: </label><br>
+          <input class="inp" id="inp-numero" type="number" placeholder="Digite o Nº da residencia..." />
+          <br />
+          <label class="lbl" id="lbl-compl" for="inp-compl">Complemento (Opcional): </label><br>
+          <input class="inp" id="inp-compl" type="text" placeholder="Apto nº | loja x | andar nº..." />
+          <br />
+          <label class="lbl" id="lbl-cep" for="inp-cep">CEP: </label><br>
+          <input class="inp" id="inp-cep" type="number" pattern="12345-67" placeholder="xxxxx-xx" />
         </fieldset>
+        <!--INFO ADICIONAL-->
         <fieldset id="info-adicional">
-            <legend>Informação adicional</legend>
-            <label id="lbl-obs" for="inp-obs">Observações (Opcional): </label><br>
-            <textarea id="inp-obs" placeholder="Escreva uma observação..."></textarea>
+          <legend>Informação adicional</legend>
+          <label class="lbl" id="lbl-obs" for="inp-obs">Observações (Opcional): </label><br>
+          <textarea id="inp-obs" placeholder="Escreva uma observação..."></textarea>
         </fieldset>
+        <!--NOVO USUÁRIO-->
         <fieldset id="info-novo-cad">
-            <legend>Novo usuário</legend>
-            <label id="lbl-usuario" for="inp-usuario">Crie um nome de usuário: </label>
-            <input id="inp-usario" type="text">
-            <br>
-            <label id="lbl-senha" for="inp-senha">Crie uma senha: </label>
-            <input id="inp-senha" type="password">
-            <br>
-            <label id="lbl-conf-senha" for="inp-conf-senha">Confirme sua senha: </label>
-            <input id="inp-conf-senha" type="password">
+          <legend>Novo usuário</legend>
+          <label class="lbl" id="lbl-usuario" for="inp-usuario">Crie um nome de usuário: </label><br>
+          <input class="inp" id="inp-usario" type="text" />
+          <br />
+          <label class="lbl" id="lbl-senha" for="inp-senha">Crie uma senha: </label><br>
+          <input class="inp" id="inp-senha" type="password" />
+          <br />
+          <label class="lbl" id="lbl-conf-senha" for="inp-conf-senha">Confirme sua senha: </label><br>
+          <input class="inp" id="inp-conf-senha" type="password" />
         </fieldset>
 
         <button id="btn-cadastrar" type="submit">Finalizar Cadastro</button>
