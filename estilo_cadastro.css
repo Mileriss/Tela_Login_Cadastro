@@ -1,0 +1,68 @@
+body{
+    display: grid;
+    place-items: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Kanit;
+}
+
+legend{
+    text-align: center;
+    font-weight: bold;
+}
+
+/*Tela geral*/
+#tela-cadastro{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 1.5em;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: linear-gradient(to right bottom, rgba(173, 216, 230, 0.8), rgba(128, 0, 128, 0.3), rgba(173, 216, 230, 0.8));
+
+}
+
+.lbl{
+    font-size: 20px;
+    margin-top: 10em;
+    margin-bottom: 1em;
+
+}
+
+.inp{
+    width: 100%;
+    font-size:16px;
+    border-radius: 5px;
+}
+
+.inp:focus{
+    transition: 0.3s;
+    box-shadow: 3px 3px 5px blue;
+}
+
+/*INFO PESSOAL*/
+#info-pessoal{
+    border-radius: 10px;
+}
+
+#inp-nome, #inp-sobrenome{
+    width: 80%;
+}
+
+#inp-nascimento{
+    width: fit-content;
+}
+
+/*INFO ENDEREÇO*/
+
+/*INFO ADICIONAL*/
+#inp-obs{
+    min-height: 4em;
+    height: 5em;
+    max-height: 5.5em;
+    min-width: 20em;
+    width: 35em;
+    max-width: 40em;
+}
+
+/*NOVO USUÁRIO*/
