@@ -19,13 +19,13 @@ legend{
     border: 2px solid black;
     border-radius: 20px;
     background: linear-gradient(to right bottom, rgba(173, 216, 230, 0.8), rgba(128, 0, 128, 0.3), rgba(173, 216, 230, 0.8));
-
 }
 
 .lbl{
     font-size: 20px;
     margin-top: 10em;
     margin-bottom: 1em;
+    font-weight: bold;
 
 }
 
@@ -33,6 +33,7 @@ legend{
     width: 100%;
     font-size:16px;
     border-radius: 5px;
+    margin: 5px auto;
 }
 
 .inp:focus{
@@ -46,11 +47,16 @@ legend{
 }
 
 #inp-nome, #inp-sobrenome{
-    width: 80%;
+    
 }
 
 #inp-nascimento{
     width: fit-content;
+}
+
+#lbl-masc, #lbl-fem, #lbl-outro{
+    font-weight: 100;
+    font-size: 16px;
 }
 
 /*INFO ENDEREÇO*/
@@ -60,9 +66,12 @@ legend{
     min-height: 4em;
     height: 5em;
     max-height: 5.5em;
-    min-width: 20em;
+    /* min-width: 20em;
     width: 35em;
-    max-width: 40em;
+    max-width: 40em; */
+    min-width: 50%;
+    width: 100%;
+    max-width: 27.5em;
 }
 
 /*NOVO USUÁRIO*/
