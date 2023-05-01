@@ -1,9 +1,13 @@
 body{
     display: grid;
     place-items: center;
-    align-items: center;
     height: 100vh;
     font-family: Kanit;
+}
+
+fieldset{
+    border: 2px solid black;
+    border-radius: 20px;
 }
 
 legend{
@@ -21,61 +25,75 @@ legend{
     background: linear-gradient(to right bottom, rgba(173, 216, 230, 0.8), rgba(128, 0, 128, 0.3), rgba(173, 216, 230, 0.8));
 }
 
+#titulo-cadastro{
+    text-align: center;
+}
+
 .lbl{
     font-size: 20px;
-    margin-top: 10em;
-    margin-bottom: 1em;
+    margin: 5px;
     font-weight: bold;
 
 }
 
 .inp{
-    width: 100%;
+    width: 15em;
     font-size:16px;
     border-radius: 5px;
     margin: 5px auto;
+    margin: 10px auto;
 }
 
 .inp:focus{
     transition: 0.3s;
-    box-shadow: 3px 3px 5px blue;
+    box-shadow: 3px 3px 5px darkslategray;
 }
 
 /*INFO PESSOAL*/
 #info-pessoal{
-    border-radius: 10px;
-}
-
-#inp-nome, #inp-sobrenome{
-    
+    margin: 0 auto;
 }
 
 #inp-nascimento{
     width: fit-content;
 }
 
-#lbl-masc, #lbl-fem, #lbl-outro{
-    font-weight: 100;
+#lista-genero{
+    text-align: center;
     font-size: 16px;
-}
-
-#inp-contato{
     width: fit-content;
+    height: 100%;
+    border-radius: 5px;
 }
 
 /*INFO ENDEREÇO*/
+#info-endereco{
+    
+}
 
 /*INFO ADICIONAL*/
+#info-adicional{
+    text-align: center;
+}
+
+#lbl-obs{
+    text-align: center;
+}
 #inp-obs{
-    min-height: 4em;
-    height: 5em;
-    max-height: 5.5em;
-    /* min-width: 20em;
-    width: 35em;
-    max-width: 40em; */
-    min-width: 50%;
-    width: 100%;
-    max-width: 27.5em;
+    font-size: 20px;
+    min-width: 25%;
+    width: 50%;
+    max-width: 75%;
+    min-height: 5em;
+    height: 10em;
+    max-height: 12em;
+}
+
+#max-caract{
+    color: grey;
 }
 
 /*NOVO USUÁRIO*/
+#novo-usuario{
+    text-align: center;
+}
