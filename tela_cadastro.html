@@ -16,67 +16,76 @@
     <div id="tela-cadastro">
       <h1 id="titulo-cadastro">Cadastre-se</h1>
       <form id="form-cadastro">
-        <p><i>Áreas com * são de preenchimento obrigatório!</i></p>
-        <fieldset id="info-pessoal">
-          <!--INFO PESSOAL-->
+        <i><u>Áreas com * são de preenchimento obrigatório!</u></i>
+        <!--INFO PESSOAL-->
+        <fieldset>
           <legend>* Informação pessoal</legend>
-          <label class="lbl" id="lbl-nome" for="inp-nome">Nome: </label><br />
-          <input class="inp" id="inp-nome" type="text" placeholder="Digite seu nome..." maxlength="20" required />
-          <br />
-          <label class="lbl" id="lbl-sobrenome">Sobrenome: </label><br />
-          <input class="inp" id="inp-sobrenome" type="text" placeholder="Digite seu sobrenome..." maxlength="20" required/>
-          <br />
-          <label class="lbl" id="lbl-nascimento">Data de nascimento: </label>
-          <input class="inp" id="inp-nascimento" type="date" min="1930-01-01" required/>
-          <br />
-          <label class="lbl" id="lbl-genero">Gênero: </label>
-          <input class="inp-genero" id="inp-masc" type="radio" value="Masculino" name="genero"  required/>
-          <label class="lbl" id="lbl-masc">Masculino</label>
-          <input class="inp-genero" id="inp-fem" type="radio" value="Feminino" name="genero"  required/>
-          <label class="lbl" id="lbl-fem">Feminino</label>
-          <input class="inp-radio" id="inp-outro" type="radio" value="Outro" name="genero" required/>
-          <label class="lbl" id="lbl-outro">Outro</label>
-          <br>
-          <label class="lbl" id="lbl-contato">Contato: </label>
-          <input class="inp" id="inp-contato" type="number" placeholder="DDD - 9 xxxx-xxxx / DDD xxxx-xxxx" required>
+          <div id="info-pessoal">
+            <label class="lbl" id="lbl-nome" for="inp-nome">Nome: </label>
+            <input class="inp" id="inp-nome" type="text" placeholder="Digite seu nome..." maxlength="20" required />
+            <label class="lbl" id="lbl-sobrenome">Sobrenome: </label>
+            <input class="inp" id="inp-sobrenome" type="text" placeholder="Digite seu sobrenome..." maxlength="20" required />
+            <br />
+            <label class="lbl" id="lbl-cpf" for="inp-cpf">CPF: </label>
+            <input class="inp" id="inp-cpf" type="number" placeholder="Apenas numeros..." pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required />
+            <label class="lbl" id="lbl-nascimento">Data de nascimento: </label>
+            <input class="inp" id="inp-nascimento" type="date" min="1930-01-01" required />
+            <br />
+            <label class="lbl" id="lbl-contato">Contato: </label>
+            <input class="inp" id="inp-contato" type="number" placeholder="DDD - 9 xxxx-xxxx / DDD xxxx-xxxx" required />
+            <label class="lbl" id="lbl-email">E-mail: </label>
+            <input class="inp" id="inp-email" type="email" placeholder="Digite seu e-mail..." required />
+            <br />
+            <label class="lbl" id="lbl-genero" for="lista-genero">Gênero: </label>
+            <select id="lista-genero">
+              <option id="opt-sel" value="Selecione">Selecione um gênero...</option>
+              <option id="opt-masc" value="Masculino">Masculino</option>
+              <option id="opt-fem" value="Feminino">Feminino</option>
+              <option id="opt-outro" value="Outro">Outro</option>
+            </select>
+          </div>
         </fieldset>
         <!--INFO ENDEREÇO-->
-        <fieldset id="info-endereco">
+        <fieldset>
           <legend>Endereço</legend>
-          <label class="lbl" id="lbl-rua" for="inp-rua">Rua / Avenida: </label><br />
-          <input class="inp" id="inp-rua" type="text" placeholder="Digite o seu endereço..." />
-          <br />
-          <label class="lbl" id="lbl-bairro" for="inp-bairro">Bairro: </label><br />
-          <input class="inp" id="inp-bairro" type="text" placeholder="Digite seu bairro..." />
-          <br />
-          <label class="lbl" id="lbl-numero" for="inp-numero">Nº da residencia: </label><br />
-          <input class="inp" id="inp-numero" type="number" placeholder="Digite o Nº da residencia..." />
-          <br />
-          <label class="lbl" id="lbl-compl" for="inp-compl">Complemento (Opcional): </label><br />
-          <input class="inp" id="inp-compl" type="text" placeholder="Apto nº | loja x | andar nº..." />
-          <br />
-          <label class="lbl" id="lbl-cep" for="inp-cep">CEP: </label><br />
-          <input class="inp" id="inp-cep" type="number" pattern="12345-67" placeholder="xxxxx-xx" />
+          <div id="info-endereco">
+            <label class="lbl" id="lbl-rua" for="inp-rua">Rua / Avenida: </label>
+            <input class="inp" id="inp-rua" type="text" placeholder="Digite o seu endereço..." />
+            <label class="lbl" id="lbl-bairro" for="inp-bairro">Bairro: </label>
+            <input class="inp" id="inp-bairro" type="text" placeholder="Digite seu bairro..." />
+            <br />
+            <label class="lbl" id="lbl-numero" for="inp-numero">Nº residencia: </label>
+            <input class="inp" id="inp-numero" type="number" placeholder="Digite o Nº da residencia..." />
+            <label class="lbl" id="lbl-cep" for="inp-cep">CEP: </label>
+            <input class="inp" id="inp-cep" type="number" pattern="12345-67" placeholder="xxxxx-xx" />
+            <br />
+            <label class="lbl" id="lbl-compl" for="inp-compl">Complemento (Opcional): </label>
+            <input class="inp" id="inp-compl" type="text" placeholder="Apto nº | loja x | andar nº..." />
+          </div>
         </fieldset>
         <!--INFO ADICIONAL-->
-        <fieldset id="info-adicional">
+        <fieldset>
           <legend>Informação adicional</legend>
-          <label class="lbl" id="lbl-obs" for="inp-obs">Observações (Opcional): </label><br />
-          <textarea id="inp-obs" placeholder="Escreva uma observação..."></textarea>
+          <div id="info-adicional">
+            <label class="lbl" id="lbl-obs" for="inp-obs">Observações (Opcional): </label><br />
+            <textarea id="inp-obs" placeholder="Escreva uma observação..." maxlength="150"></textarea><br />
+            <u id="max-caract">Máximo de 150 caracteres</u>
+          </div>
         </fieldset>
         <!--NOVO USUÁRIO-->
-        <fieldset id="info-novo-cad">
+        <fieldset>
           <legend>* Novo usuário</legend>
-          <label class="lbl" id="lbl-usuario" for="inp-usuario">Crie um nome de usuário: </label><br />
-          <input class="inp" id="inp-usario" type="text" minlength="5" maxlength="10" placeholder="máximo de 10 caracteres" required/>
-          <br />
-          <label class="lbl" id="lbl-senha" for="inp-senha">Crie uma senha: </label><br />
-          <input class="inp" id="inp-senha" type="password" minlength="8" placeholder="Minimo de 8 caracteres" required/>
-          <br />
-          <label class="lbl" id="lbl-conf-senha" for="inp-conf-senha">Confirme sua senha: </label><br />
-          <input class="inp" id="inp-conf-senha" type="password" minlength="8" placeholder="Digite a senha criada acima" required/>
+          <div id="novo-usuario">
+            <label class="lbl" id="lbl-usuario" for="inp-usuario">Crie um nome de usuário: </label><br />
+            <input class="inp" id="inp-usario" type="text" minlength="5" maxlength="10" placeholder="máximo de 10 caracteres" required />
+            <br />
+            <label class="lbl" id="lbl-senha" for="inp-senha">Crie uma senha: </label><br />
+            <input class="inp" id="inp-senha" type="password" minlength="8" placeholder="Minimo de 8 caracteres" required />
+            <br />
+            <label class="lbl" id="lbl-conf-senha" for="inp-conf-senha">Confirme sua senha: </label><br />
+            <input class="inp" id="inp-conf-senha" type="password" minlength="8" placeholder="Digite a senha novamente" required />
+          </div>
         </fieldset>
-
         <button id="btn-cadastrar" type="submit">Finalizar Cadastro</button>
       </form>
     </div>
