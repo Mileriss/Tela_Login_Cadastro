@@ -5,15 +5,18 @@
 ## Info pessoal  
 - Nome  
 - Sobrenome  
+- CPF    
 - Data de nascimento    
+- Contato  
+- E-mail  
 - Gênero  
 
 ## Endereço  
 - Rua  
 - Bairro  
 - Nº  
-- Complemento  
 - CEP  
+- Complemento  
 
 ## Info adicional  
 - Campo observações  
