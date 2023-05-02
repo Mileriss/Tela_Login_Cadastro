@@ -1,64 +1,100 @@
-body{
+body {
     display: grid;
     place-items: center;
     height: 100vh;
     font-family: Kanit;
+    background-image: url(./Imagens/montanha.svg);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-fieldset{
-    border: 2px solid black;
-    border-radius: 20px;
-}
-
-legend{
+h2{
     text-align: center;
     font-weight: bold;
+    text-shadow: 5px 5px 5px rebeccapurple;
+}
+
+hr{
+    width: 100%;
+    background-color: red;
+}
+
+form{
+    display: flex;
+    flex-flow: column wrap;
 }
 
 /*Tela geral*/
-#tela-cadastro{
+#tela-cadastro {
     display: flex;
     flex-flow: column wrap;
     padding: 1.5em;
     border: 2px solid black;
     border-radius: 20px;
     background: linear-gradient(to right bottom, rgba(173, 216, 230, 0.8), rgba(128, 0, 128, 0.3), rgba(173, 216, 230, 0.8));
+    width: auto;
 }
 
-#titulo-cadastro{
+#titulo-cadastro {
+    animation: flutuando 2s ease-in-out alternate infinite;
     text-align: center;
 }
 
-.lbl{
+@keyframes flutuando {
+    to {
+        transform: translateY(5px);
+    }
+}
+
+.lbl {
     font-size: 20px;
     margin: 5px;
     font-weight: bold;
 
 }
 
-.inp{
+.inp {
     width: 15em;
-    font-size:16px;
+    font-size: 16px;
     border-radius: 5px;
     margin: 5px auto;
     margin: 10px auto;
+    background-color: beige;
 }
 
-.inp:focus{
-    transition: 0.3s;
-    box-shadow: 3px 3px 5px darkslategray;
+.inp:focus {
+    transition-duration: 0.3s;
+    background-color: white;
+    box-shadow: 5px 5px 5px gray;
+    font-weight: 300;
+}
+
+.fmtc-fundo {
+    margin: 0 auto;
+    background: linear-gradient(to bottom, rgba(128, 0, 128, 0.4), rgba(128, 0, 128, 0.2), rgba(128, 0, 128, 0.4));
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.exterior {
+    /* border: 5px inset rgba(128, 0, 128, 0.3); */
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+
 }
 
 /*INFO PESSOAL*/
-#info-pessoal{
-    margin: 0 auto;
-}
+#info-pessoal {}
 
-#inp-nascimento{
+#inp-nascimento {
     width: fit-content;
 }
 
-#lista-genero{
+#lista-genero {
     text-align: center;
     font-size: 16px;
     width: fit-content;
@@ -67,33 +103,48 @@ legend{
 }
 
 /*INFO ENDEREÇO*/
-#info-endereco{
-    
+#info-endereco {}
+
+#inp-numero {
+    width: 25%;
 }
 
 /*INFO ADICIONAL*/
-#info-adicional{
+#info-adicional,
+#lbl-obs {
     text-align: center;
 }
 
-#lbl-obs{
-    text-align: center;
-}
-#inp-obs{
-    font-size: 20px;
-    min-width: 25%;
-    width: 50%;
-    max-width: 75%;
-    min-height: 5em;
-    height: 10em;
-    max-height: 12em;
+#inp-obs {
+    border-radius: 10px;
+    font-size: 14px;
+    min-width: 40%;
+    width: 80%;
+    max-width: 90%;
+    min-height: 2.5em;
+    height: 5em;
+    max-height: 7.5em;
 }
 
-#max-caract{
-    color: grey;
+#max-caract {
+    color: black;
 }
 
 /*NOVO USUÁRIO*/
-#novo-usuario{
+#novo-usuario {
     text-align: center;
+    width: fit-content;
+}
+
+/*BOTÃO FINALIZAR CADASTRO*/
+#btn-cadastrar {
+    display: grid;
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    width: 10em;
+    border-radius: 5px;
+    margin: 10px auto;
+    cursor: pointer;
+    background: linear-gradient(to bottom, white, grey);
 }
