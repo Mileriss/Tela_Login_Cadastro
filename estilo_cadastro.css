@@ -73,14 +73,14 @@ form{
 
 .fmtc-fundo {
     margin: 0 auto;
-    background: linear-gradient(to bottom, rgba(128, 0, 128, 0.4), rgba(128, 0, 128, 0.2), rgba(128, 0, 128, 0.4));
+    background: linear-gradient(to bottom, rgba(128, 0, 128, 0.3), rgba(128, 0, 128, 0.2), rgba(128, 0, 128, 0.3));
     border-radius: 10px;
     padding: 10px;
     margin: 10px auto;
 }
 
 .exterior {
-    /* border: 5px inset rgba(128, 0, 128, 0.3); */
+    border: 2px solid rgba(128, 0, 128, 0.3);
     border-radius: 20px;
     width: auto;
     height: auto;
