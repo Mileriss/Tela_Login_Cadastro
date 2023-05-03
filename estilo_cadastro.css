@@ -73,22 +73,26 @@ form{
 
 .fmtc-fundo {
     margin: 0 auto;
-    background: linear-gradient(to bottom, rgba(128, 0, 128, 0.3), rgba(128, 0, 128, 0.2), rgba(128, 0, 128, 0.3));
     border-radius: 10px;
     padding: 10px;
     margin: 10px auto;
 }
 
 .exterior {
-    border: 2px solid rgba(128, 0, 128, 0.3);
     border-radius: 20px;
     width: auto;
     height: auto;
-
 }
 
 /*INFO PESSOAL*/
-#info-pessoal {}
+#info-pessoal {
+    background: linear-gradient(to right bottom, rgba(173, 216, 230, 0.6), rgba(255, 182, 193, 0.6));
+    border: 3px inset;
+    border-top-color: rgba(173, 216, 230, 0.6);
+    border-left-color: rgba(173, 216, 230, 0.6);
+    border-right-color: rgba(255, 182, 193, 0.6);
+    border-bottom-color: rgba(255, 182, 193, 0.6);
+}
 
 #inp-nascimento {
     width: fit-content;
@@ -103,16 +107,33 @@ form{
 }
 
 /*INFO ENDEREÇO*/
-#info-endereco {}
+#info-endereco {
+    background: linear-gradient(to right bottom, rgba(173, 216, 230, 0.6), rgba(255, 182, 193, 0.6));
+    border: 3px inset;
+    border-top-color: rgba(173, 216, 230, 0.6);
+    border-left-color: rgba(173, 216, 230, 0.6);
+    border-right-color: rgba(255, 182, 193, 0.6);
+    border-bottom-color: rgba(255, 182, 193, 0.6);
+}
 
 #inp-numero {
     width: 25%;
 }
 
 /*INFO ADICIONAL*/
+#info-adicional{
+    background: linear-gradient(to right bottom, rgba(255, 182, 193, 0.6), rgba(173, 216, 230, 0.6));
+    border: 3px inset;
+    border-top-color: rgba(255, 182, 193, 0.6);
+    border-left-color: rgba(255, 182, 193, 0.6);
+    border-right-color: rgba(173, 216, 230, 0.6);
+    border-bottom-color: rgba(173, 216, 230, 0.6);
+}
+
 #info-adicional,
 #lbl-obs {
     text-align: center;
+    
 }
 
 #inp-obs {
@@ -134,10 +155,16 @@ form{
 #novo-usuario {
     text-align: center;
     width: fit-content;
+    background: linear-gradient(to right bottom, rgba(255, 182, 193, 0.6), rgba(173, 216, 230, 0.6));
+    border: 3px inset;
+    border-top-color: rgba(255, 182, 193, 0.6);
+    border-left-color: rgba(255, 182, 193, 0.6);
+    border-right-color: rgba(173, 216, 230, 0.6);
+    border-bottom-color: rgba(173, 216, 230, 0.6);
 }
 
 /*BOTÃO FINALIZAR CADASTRO*/
-#btn-cadastrar {
+#btn-cadastrar, #btn-logar{
     display: grid;
     font-family: 'Kanit', sans-serif;
     font-size: 15px;
