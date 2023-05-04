@@ -3,7 +3,7 @@ body {
     place-items: center;
     height: 100vh;
     font-family: Kanit;
-    background-image: url(./Imagens/montanha.svg);
+    background-image: url(./Imagens/montanha_roxa.jpg);
     height: 100%;
     background-position: center;
     background-size: cover;
@@ -33,7 +33,7 @@ form{
     padding: 1.5em;
     border: 2px solid black;
     border-radius: 20px;
-    background: linear-gradient(to right bottom, rgba(173, 216, 230, 0.8), rgba(128, 0, 128, 0.3), rgba(173, 216, 230, 0.8));
+    background: linear-gradient(to right bottom, rgba(173, 216, 230, 0.6), rgba(102, 51, 153, 0.6), rgba(255, 182, 193, 0.6));
     width: auto;
 }
 
@@ -86,12 +86,12 @@ form{
 
 /*INFO PESSOAL*/
 #info-pessoal {
-    background: linear-gradient(to right bottom, rgba(173, 216, 230, 0.6), rgba(255, 182, 193, 0.6));
+    background: linear-gradient(to right bottom, rgba(173, 216, 230, 0.5), rgba(102, 51, 153, 0.5));
     border: 3px inset;
-    border-top-color: rgba(173, 216, 230, 0.6);
-    border-left-color: rgba(173, 216, 230, 0.6);
-    border-right-color: rgba(255, 182, 193, 0.6);
-    border-bottom-color: rgba(255, 182, 193, 0.6);
+    border-top-color: rgba(173, 216, 230, 0.5);
+    border-left-color: rgba(173, 216, 230, 0.5);
+    border-right-color: rgba(102, 51, 153, 0.5);
+    border-bottom-color: rgba(102, 51, 153, 0.5);
 }
 
 #inp-nascimento {
@@ -108,12 +108,12 @@ form{
 
 /*INFO ENDEREÇO*/
 #info-endereco {
-    background: linear-gradient(to right bottom, rgba(173, 216, 230, 0.6), rgba(255, 182, 193, 0.6));
+    background: linear-gradient(to right bottom, rgba(173, 216, 230, 0.5), rgba(102, 51, 153, 0.5));
     border: 3px inset;
-    border-top-color: rgba(173, 216, 230, 0.6);
-    border-left-color: rgba(173, 216, 230, 0.6);
-    border-right-color: rgba(255, 182, 193, 0.6);
-    border-bottom-color: rgba(255, 182, 193, 0.6);
+    border-top-color: rgba(173, 216, 230, 0.5);
+    border-left-color: rgba(173, 216, 230, 0.5);
+    border-right-color: rgba(102, 51, 153, 0.5);
+    border-bottom-color: rgba(102, 51, 153, 0.5);
 }
 
 #inp-numero {
@@ -122,12 +122,12 @@ form{
 
 /*INFO ADICIONAL*/
 #info-adicional{
-    background: linear-gradient(to right bottom, rgba(255, 182, 193, 0.6), rgba(173, 216, 230, 0.6));
+    background: linear-gradient(to right bottom, rgba(102, 51, 153, 0.5), rgba(255, 182, 193, 0.5));
     border: 3px inset;
-    border-top-color: rgba(255, 182, 193, 0.6);
-    border-left-color: rgba(255, 182, 193, 0.6);
-    border-right-color: rgba(173, 216, 230, 0.6);
-    border-bottom-color: rgba(173, 216, 230, 0.6);
+    border-top-color: rgba(102, 51, 153, 0.5);
+    border-left-color: rgba(102, 51, 153, 0.5);
+    border-right-color: rgba(255, 182, 193, 0.5);
+    border-bottom-color: rgba(255, 182, 193, 0.5);
 }
 
 #info-adicional,
@@ -155,12 +155,12 @@ form{
 #novo-usuario {
     text-align: center;
     width: fit-content;
-    background: linear-gradient(to right bottom, rgba(255, 182, 193, 0.6), rgba(173, 216, 230, 0.6));
+    background: linear-gradient(to right bottom, rgba(102, 51, 153, 0.5), rgba(255, 182, 193, 0.5));
     border: 3px inset;
-    border-top-color: rgba(255, 182, 193, 0.6);
-    border-left-color: rgba(255, 182, 193, 0.6);
-    border-right-color: rgba(173, 216, 230, 0.6);
-    border-bottom-color: rgba(173, 216, 230, 0.6);
+    border-top-color: rgba(102, 51, 153, 0.5);
+    border-left-color: rgba(102, 51, 153, 0.5);
+    border-right-color: rgba(255, 182, 193, 0.5);
+    border-bottom-color: rgba(255, 182, 193, 0.5);
 }
 
 /*BOTÃO FINALIZAR CADASTRO*/
