@@ -17,6 +17,7 @@ hr{
 }
 
 #titulo-login{
+    text-align: center;
     animation: flutuando 2s ease-in-out infinite alternate;
 }
 @keyframes flutuando {
