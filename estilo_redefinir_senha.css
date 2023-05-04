@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Kanit', sans-serif;
+    background-image: url(./Imagens/montanha_neblina.png);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#titulo-alterar-senha{
+    animation: flutuando 2s ease-in-out infinite alternate;
+}
+@keyframes flutuando {
+    to{
+        transform: translateY(5px);
+    }
+    
+}
+
+#tela-alterar-senha {
+    display: flex;
+    flex-flow: column wrap;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 1em;
+    background: linear-gradient(to right bottom, rgba(255, 68, 0, 0.6), rgba(255, 255, 0, 0.6), rgba(165, 42, 42, 0.6));
+}
+
+#lbl-nova-senha, #lbl-repetir-senha{
+    font-size: 25px;
+    padding: 5px;
+}
+
+#inp-nova-senha, #inp-repetir-senha {
+    border-radius: 5px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+#inp-nova-senha:focus, #inp-repetir-senha:focus{
+    transition-duration: 0.3s;
+    background-color: white;
+    box-shadow: 5px 5px 5px gray;
+    font-weight: 300;
+}
+
+#btn-alterar{
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    width: 10em;
+    border-radius: 5px;
+    margin: 10px auto;
+    cursor: pointer;
+    background: linear-gradient(to bottom, white,grey);
+}
