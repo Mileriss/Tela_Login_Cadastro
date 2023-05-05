@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="estilo_redefinir_senha.css">
+    <link rel="stylesheet" type="text/css" href="estilo_redefinir_senha.css" />
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet" />
     <title>Redefinir Senha</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="tela-alterar-senha">
-        <h1 id="titulo-alterar-senha">Alterar senha</h1>
-        <label id="lbl-nova-senha" for="inp-nova-senha">Nova senha: </label>
-        <input id="inp-nova-senha" type="text" placeholder="Digite a nova senha..." required><br>
-        <label id="lbl-repetir-senha" for="inp-repetir-senha">Digite novamente: </label>
-        <input id="inp-repetir-senha" type="text" placeholder="Digite a senha novamente..." required><br>
-        <button id="btn-alterar" type="submit">Alterar</button>
+      <h1 id="titulo-alterar-senha">Alterar senha</h1>
+      <label id="lbl-nova-senha" for="inp-nova-senha">Nova senha: </label>
+      <input id="inp-nova-senha" type="text" placeholder="Digite a nova senha..." minlength="8" required /><br />
+      <label id="lbl-repetir-senha" for="inp-repetir-senha">Digite novamente: </label>
+      <input id="inp-repetir-senha" type="text" placeholder="Digite a senha novamente..." minlength="8" required /><br />
+      <button id="btn-alterar" type="submit">Alterar</button>
     </div>
 
-    
-</body>
+    <script src="/script.js"></script>
+  </body>
 </html>
