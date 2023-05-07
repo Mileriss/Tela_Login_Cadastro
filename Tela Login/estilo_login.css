@@ -5,7 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     font-family: 'Kanit', sans-serif;
-    background-image: url(./Imagens/montanha.svg);
+    background-image: url(./montanha.svg);
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;

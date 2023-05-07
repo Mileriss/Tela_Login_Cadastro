@@ -3,7 +3,7 @@ body {
     place-items: center;
     height: 100vh;
     font-family: Kanit;
-    background-image: url(./Imagens/montanha_roxa.jpg);
+    background-image: url(./montanha_roxa.jpg);
     height: 100%;
     background-position: center;
     background-size: cover;
