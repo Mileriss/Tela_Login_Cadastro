@@ -15,6 +15,12 @@ h2{
     font-weight: bold;
     text-shadow: 5px 5px 5px rebeccapurple;
 }
+/*Dispositivos MENORES*/
+@media screen and (min-width: 200px) and (max-width: 850px) {
+    h2{
+        font-size: 30px;
+    }
+}
 
 hr{
     width: 100%;
@@ -39,6 +45,13 @@ form{
 #titulo-cadastro {
     animation: flutuando 2s ease-in-out alternate infinite;
     text-align: center;
+    font-size: 40px;
+}
+/*Dispositivos MENORES*/
+@media screen and (min-width: 200px) and (max-width: 850px){
+    #titulo-cadastro{
+        font-size: 45px;
+    }
 }
 
 @keyframes flutuando {
@@ -49,9 +62,16 @@ form{
 
 .lbl {
     font-size: 20px;
-    margin: 5px;
+    margin: 0 auto;
     font-weight: bold;
-
+}
+/*Dispositivos MENORES*/
+@media screen and (min-width: 200px) and (max-width: 850px){
+    .lbl{
+        display: flex;
+        flex-direction: column;
+        font-size: 25px;
+    }
 }
 
 .inp {
@@ -59,8 +79,15 @@ form{
     font-size: 16px;
     border-radius: 5px;
     margin: 5px auto;
-    margin: 10px auto;
+    /* margin: 10px auto; */
     background-color: beige;
+}
+/*Dispositivos MENORES*/
+@media screen and (min-width: 200px) and (max-width: 850px){
+    .inp{
+        width: 100%;
+        font-size: 20px;
+    }
 }
 
 .inp:focus {
@@ -163,7 +190,7 @@ form{
 }
 
 /*BOTÃO FINALIZAR CADASTRO*/
-#btn-cadastrar, #btn-logar{
+#btn-cadastrar{
     display: grid;
     font-family: 'Kanit', sans-serif;
     font-size: 15px;
@@ -177,7 +204,26 @@ form{
 
 /*LOGAR*/
 #logar{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(128, 128, 128, 0.6));
+    color: black;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+#lbl-logar{
+    font-size: 16px;
+}
+
+#btn-logar{
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    width: fit-content;
+    border-radius: 5px;
+    margin: 5px auto;
+    cursor: pointer;
 }
