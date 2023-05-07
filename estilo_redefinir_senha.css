@@ -18,6 +18,11 @@ hr{
     animation: flutuando 2s ease-in-out infinite alternate;
     text-align: center;
 }
+@media screen and (min-width: 700px), (min-width: 1000px) and (max-width: 1200), (max-width: 1400){
+    #titulo-alterar-senha{
+        font-size: 50px;
+    }
+}
 @keyframes flutuando {
     to{
         transform: translateY(5px);
@@ -35,9 +40,14 @@ hr{
     background: linear-gradient(to bottom, rgba(255, 68, 0, 0.7), rgba(255, 217, 0, 0.7), rgba(165, 42, 42, 0.8));
 }
 
-#lbl-nova-senha, #lbl-repetir-senha, #lbl-logar{
+#lbl-nova-senha, #lbl-repetir-senha{
     font-size: 25px;
     padding: 5px;
+}
+@media screen and (min-width: 700px), (min-width: 1000px) and (max-width: 1200), (max-width: 1400){
+    #lbl-nova-senha, #lbl-repetir-senha{
+        font-size: 32px;
+    }
 }
 
 #inp-nova-senha, #inp-repetir-senha {
@@ -47,6 +57,11 @@ hr{
     font-weight: bold;
     background-color: rgba(128, 128, 128, 0.5);
 }
+@media screen and (min-width: 700px), (min-width: 1000px) and (max-width: 1200), (max-width: 1400){
+    #inp-nova-senha, #inp-repetir-senha{
+        font-size: 1.5em;
+    }
+}
 
 #inp-nova-senha:focus, #inp-repetir-senha:focus{
     transition-duration: 0.3s;
@@ -55,13 +70,46 @@ hr{
     font-weight: 300;
 }
 
-#btn-alterar, #btn-logar{
+#btn-alterar{
     font-family: 'Kanit', sans-serif;
     font-size: 15px;
     font-weight: 600;
     width: 10em;
     border-radius: 5px;
-    margin: 10px auto;
+    margin: 5px auto;
     cursor: pointer;
     background: linear-gradient(to bottom, white,grey);
 }
+@media screen and (min-width: 700px), (min-width: 1000px) and (max-width: 1200), (max-width: 1400){
+    #btn-alterar{
+        font-size: 23px;
+        width: 8em;
+    }
+}
+
+/*LOGAR COM A NOVA SENHA*/
+#logar{
+    border: 2px solid black;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(128, 128, 128, 0.6));
+    color: black;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+#lbl-logar{
+    font-size: 16px;
+}
+
+#btn-logar{
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    width: fit-content;
+    border-radius: 5px;
+    margin: 5px auto;
+    cursor: pointer;
+}
+
