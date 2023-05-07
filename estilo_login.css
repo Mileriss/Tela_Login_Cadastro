@@ -1,3 +1,4 @@
+/*FORMATAÃO GERAL*/
 body {
     display: flex;
     justify-content: center;
@@ -9,22 +10,48 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
-hr{
-    height: 100%;
-    width: 100%;
-    color: black;
+a{
+    text-align: center;
+}
+@media screen and (min-width: 700px), (min-width: 1000px) and (max-width: 1200), (max-width: 1400){
+    a{
+        font-size: 20px;
+    }
+}
+#negrito{
+    font-size: 24px;
+}
+@media screen and (min-width: 200px) and (max-width: 700px){
+    #negrito{
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 700px), (min-width: 1000px) and (max-width: 1200), (max-width: 1400){
+    #negrito{
+        font-size: 20px;
+    }
 }
 
-#titulo-login{
+hr {
+    width: 100%;
+}
+
+/*FORMATAÇÃO TELA DE LOGIN*/
+#titulo-login {
     text-align: center;
     animation: flutuando 2s ease-in-out infinite alternate;
 }
+@media screen and (min-width: 700px), (min-width: 1000px) and (max-width: 1200), (max-width: 1400){
+    #titulo-login{
+        font-size: 50px;
+    }
+}
+
 @keyframes flutuando {
-    to{
+    to {
         transform: translateY(5px);
     }
-    
+
 }
 
 #tela-login {
@@ -36,10 +63,16 @@ hr{
     background: linear-gradient(to right bottom, lightblue, rgba(255, 182, 193, 0.8), rgba(128, 0, 128, 0.6));
 }
 
-#lbl-usuario, #lbl-senha{
+#lbl-usuario, #lbl-senha {
     font-size: 25px;
     padding: 5px;
 }
+@media screen and (min-width: 700px), (min-width: 1000px) and (max-width: 1200), (max-width: 1400){
+    #lbl-usuario, #lbl-senha {
+        font-size: 32px;
+    }
+}
+
 
 #inp-usuario, #inp-senha {
     border-radius: 5px;
@@ -48,8 +81,13 @@ hr{
     font-weight: bold;
     background-color: rgba(128, 128, 128, 0.5);
 }
+@media screen and (min-width: 700px), (min-width: 1000px) and (max-width: 1200), (max-width: 1400){
+    #inp-usuario, #inp-senha{
+        font-size: 1.5em;
+    }
+}
 
-#inp-usuario:focus, #inp-senha:focus{
+#inp-usuario:focus, #inp-senha:focus {
     transition-duration: 0.3s;
     background-color: white;
     box-shadow: 5px 5px 5px gray;
@@ -61,12 +99,17 @@ hr{
     color: darkblue;
     width: fit-content;
 }
+@media screen and (min-width: 700px), (min-width: 1000px) and (max-width: 1200), (max-width: 1400){
+    #inp-usuario, #inp-senha{
+        font-size: 1.5em;
+    }
+}
 
 #esq-senha:active {
     color: rgba(0, 0, 255, 0.7);
 }
 
-#btn-entrar, #btn-cadastro{
+#btn-entrar, #btn-cadastro {
     font-family: 'Kanit', sans-serif;
     font-size: 15px;
     font-weight: 600;
@@ -74,5 +117,12 @@ hr{
     border-radius: 5px;
     margin: 10px auto;
     cursor: pointer;
-    background: linear-gradient(to bottom, white,grey);
+    background: linear-gradient(to bottom, white, grey);
+}
+
+@media screen and (min-width: 700px), (min-width: 1000px) and (max-width: 1200), (max-width: 1400) {
+    #btn-entrar, #btn-cadastro{
+        font-size: 23px;
+        width: 8em;
+    }
 }
