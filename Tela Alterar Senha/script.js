@@ -1,10 +1,3 @@
-// TELA DE LOGIN
-
-
-// TELA DE CADASTRO 
-
-
-// TELA ALTERAR SENHA
 let btn_alterar = document.getElementById("btn-alterar");
 let campo_nova_senha = document.getElementById("inp-nova-senha");
 let campo_repetir_senha = document.getElementById("inp-repetir-senha");
